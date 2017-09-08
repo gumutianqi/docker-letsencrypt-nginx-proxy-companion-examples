@@ -40,11 +40,11 @@ services:
     volumes:
       - "../../../volumes/examples/simple-site/conf.d/:/etc/nginx/conf.d"
     environment:
-      - VIRTUAL_HOST=site.example.com
+      - VIRTUAL_HOST=hub.wetam.me
       - VIRTUAL_NETWORK=nginx-proxy
       - VIRTUAL_PORT=80
-      - LETSENCRYPT_HOST=site.example.com
-      - LETSENCRYPT_EMAIL=email@example.com
+      - LETSENCRYPT_HOST=hub.wetam.me
+      - LETSENCRYPT_EMAIL=larrykoo@126.com
     networks:
       - proxy-tier
 
